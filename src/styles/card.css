@@ -1,0 +1,144 @@
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--cardGray);
+  text-align: left; /* Align text content to the left */
+  padding: 1.7em;
+  position: relative;
+  margin-bottom: 20px; /* Increase the bottom margin for spacing between cards */
+}
+
+.card:before {
+  content: "";
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* Define background colors for different card types */
+.card.facebook:before {
+  background: var(--facebook);
+}
+.card.twitter:before {
+  background: var(--twitter);
+}
+.card.instagram:before {
+  background-image: linear-gradient(to right, var(--instagram-1) 0%, var(--instagram-2) 100%);
+}
+.card.youtube:before {
+  background: var(--youTube);
+}
+
+.card-title {
+  color: var(--cardTitle);
+  font-size: 0.8em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.card-title img {
+  margin-right: 5px;
+}
+
+.card-followers-number {
+  font-size: 28px; /* Decrease font size for better fit */
+  font-weight: 700;
+}
+
+.card-followers-title {
+  display: block;
+  text-transform: uppercase;
+  color: var(--cardTitle);
+  letter-spacing: 2px; /* Reduce letter spacing for better readability */
+  font-size: 0.7em;
+}
+
+.card-today {
+  margin-top: 10px; /* Decrease top margin for better spacing */
+  color: var(--lime-green);
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px; /* Increase bottom margin for spacing */
+}
+
+.user-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.card-content {
+  margin-bottom: 20px; /* Increase bottom margin for spacing */
+}
+
+.post-text {
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px; /* Increase gap for better separation */
+  margin-bottom: 20px; /* Increase bottom margin for spacing */
+}
+
+.like-button,
+.comment-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.comment-button {
+  background-color: lightblue;
+  color: blue;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+/* card.css */
+
+/* Your existing styles */
+
+.like-button {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #333333;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.like-button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.like-button.liked {
+  background-color: #4caf50; /* Green */
+  color: #ffffff;
+}
+
+.like-button.liked:hover {
+  background-color: #388e3c; /* Darker green */
+}

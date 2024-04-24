@@ -1,0 +1,44 @@
+/* switch.css */
+
+.dark-mode {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Align items vertically */
+  padding-top: 1em;
+}
+
+.dark-mode-title {
+  margin-right: 1em; /* Add margin to create space between title and switch */
+}
+
+
+.checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.4em;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--switch);
+  cursor: pointer;
+}
+
+.switch::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: var(--switchSpinner);
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.checkbox:checked + .switch::before {
+  transform: translateX(40px);
+}
