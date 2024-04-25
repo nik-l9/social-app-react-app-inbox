@@ -66,8 +66,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-- GitHub: [YourGitHubUsername](https://github.com/YourGitHubUsername)
-- Email: youremail@example.com
-```
+- GitHub: [YourGitHubUsername](https://github.com/suprsend-notificationapi)
+- Email: nklkumar0321@gmail.com
 
-Replace placeholders like `yourusername`, `YourGitHubUsername`, and `youremail@example.com` with your actual GitHub username and email address. Additionally, make sure to include the `demo.gif` file in your project directory or update the image URL in the README.md file accordingly.
+
