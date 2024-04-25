@@ -1,6 +1,6 @@
 # Social Media Dashboard
 
-[Project Demo]([demo.gif](https://suprsend-notificationapi.github.io/social-app-react-app-inbox/))
+[Project Demo](https://suprsend-notificationapi.github.io/social-app-react-app-inbox/)
 
 ## Description
 
@@ -54,7 +54,7 @@ You can check how to use a React inapp notification center with dynamic theme fu
 
 ## Demo
 
-[Project Demo]([demo.gif](https://suprsend-notificationapi.github.io/social-app-react-app-inbox/))
+[Project Demo](https://suprsend-notificationapi.github.io/social-app-react-app-inbox/)
 
 ## Contributing
 
