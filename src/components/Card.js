@@ -4,12 +4,13 @@ import suprsend from "@suprsend/web-sdk";
 
 suprsend.init(process.env.REACT_APP_SUPRSEND_WORKSPACE_KEY, process.env.REACT_APP_SUPRSEND_WORKSPACE_SECRET);
 
+
 function Card({ userName, followers, todayFollowers, icon, name, postText, imageUrl, imageWidth, imageHeight }) {
     const cardClass = `card ${name}`;
     const [liked, setLiked] = useState(false);
 
     const handleLikeClick = () => {
-        suprsend.track("INBOX DEMO - SEND NOTIFICATION", { userName });
+        suprsend.track("INBOX DEMO - SEND NOTIFICATION");
         setLiked(true); // Update the state to indicate that the button has been clicked
     };
 
