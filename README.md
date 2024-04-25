@@ -1,4 +1,4 @@
-# Social Media Dashboard
+# React Inapp Inbox for Social Media Tools
 
 [Project Demo](https://suprsend-notificationapi.github.io/social-app-react-app-inbox/)
 
