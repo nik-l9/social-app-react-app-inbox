@@ -22,7 +22,7 @@ function Header({ children }) {
                     <SuprSendInbox
     workspaceKey={process.env.REACT_APP_SUPRSEND_WORKSPACE_KEY}
     subscriberId={process.env.REACT_APP_SUPRSEND_SUBSCRIBER_ID}
-    distinctId={process.env.REACT_APP_SUPRSEND_DISTINCT_ID}
+    distinctId="nklkumar0321@gmail.com"
     themeType={theme} 
 />
                     <Switch onThemeChange={toggleTheme} />
