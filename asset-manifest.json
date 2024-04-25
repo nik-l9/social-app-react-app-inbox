@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/social-app-react-app-inbox/static/css/main.28f6b765.css",
+    "main.js": "/social-app-react-app-inbox/static/js/main.8bcea37c.js",
+    "static/js/453.5e665867.chunk.js": "/social-app-react-app-inbox/static/js/453.5e665867.chunk.js",
+    "index.html": "/social-app-react-app-inbox/index.html",
+    "main.28f6b765.css.map": "/social-app-react-app-inbox/static/css/main.28f6b765.css.map",
+    "main.8bcea37c.js.map": "/social-app-react-app-inbox/static/js/main.8bcea37c.js.map",
+    "453.5e665867.chunk.js.map": "/social-app-react-app-inbox/static/js/453.5e665867.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28f6b765.css",
+    "static/js/main.8bcea37c.js"
+  ]
+}
