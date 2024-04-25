@@ -10,7 +10,7 @@ function Card({ userName, followers, todayFollowers, icon, name, postText, image
     const [liked, setLiked] = useState(false);
 
     const handleLikeClick = () => {
-        suprsend.track("INBOX DEMO - SEND NOTIFICATION");
+        suprsend.track("SHIPMENTV1");
         setLiked(true); // Update the state to indicate that the button has been clicked
     };
 
