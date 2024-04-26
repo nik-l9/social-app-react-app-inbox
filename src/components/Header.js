@@ -17,7 +17,7 @@ function Header({ children }) {
                 <div className="header-grid">
                     <div>
                         <h1>Social Media Dashboard</h1>
-                        <p className="header-total">Total Followers: 23,004</p>
+                        <p className="header-total">Implementing React inapp notification center.</p>
                     </div>
                     <SuprSendInbox
     workspaceKey={process.env.REACT_APP_SUPRSEND_WORKSPACE_KEY}

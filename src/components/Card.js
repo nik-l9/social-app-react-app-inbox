@@ -4,10 +4,10 @@ import suprsend from "@suprsend/web-sdk";
 
 suprsend.init(process.env.REACT_APP_SUPRSEND_WORKSPACE_KEY, process.env.REACT_APP_SUPRSEND_WORKSPACE_SECRET);
 
-
-function Card({ userName, followers, todayFollowers, icon, name, postText, imageUrl, imageWidth, imageHeight }) {
+function Card({ userName, followers, todayFollowers, icon, name, postText, imageUrl }) {
     const cardClass = `card ${name}`;
     const [liked, setLiked] = useState(false);
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     const handleLikeClick = () => {
         suprsend.track("SHIPMENTV1", {"number": "234", "locations":"Avenue Street"});
@@ -22,7 +22,12 @@ function Card({ userName, followers, todayFollowers, icon, name, postText, image
             </div>
             <div className="card-content">
                 <p className="post-text">{postText}</p>
-                {imageUrl && <img src={imageUrl} alt="Post Image" className="post-image" style={{ width: imageWidth, height: imageHeight }} />}
+                {imageUrl && <img
+                    src={imageUrl}
+                    alt="Post Image"
+                    className={`post-image ${imageLoaded ? 'loaded' : ''}`}
+                    onLoad={() => setImageLoaded(true)}
+                />}
             </div>
             <div className="card-actions">
                 <button className={`like-button ${liked ? 'liked' : ''}`} onClick={handleLikeClick}>

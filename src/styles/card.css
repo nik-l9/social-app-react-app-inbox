@@ -6,6 +6,11 @@
   padding: 1.7em;
   position: relative;
   margin-bottom: 20px; /* Increase the bottom margin for spacing between cards */
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover */
 }
 
 .card:before {
@@ -93,6 +98,12 @@
   display: flex;
   gap: 12px; /* Increase gap for better separation */
   margin-bottom: 20px; /* Increase bottom margin for spacing */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-actions button:hover {
+  background-color: #333333;
+  color: #ffffff;
 }
 
 .like-button,
@@ -142,3 +153,15 @@
 .like-button.liked:hover {
   background-color: #388e3c; /* Darker green */
 }
+
+.post-image {
+  width: 100%; /* Adjust percentage as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px auto; /* Add margin to center the image and provide spacing */
+  opacity: 0;
+  transition: opacity 2.3s;
+}
+
+.post-image.loaded {
+  opacity: 1;
+}  
