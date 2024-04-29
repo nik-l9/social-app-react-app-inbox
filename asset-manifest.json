@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/social-app-react-app-inbox/static/css/main.04c9f8fe.css",
-    "main.js": "/social-app-react-app-inbox/static/js/main.8cf7ab81.js",
+    "main.js": "/social-app-react-app-inbox/static/js/main.4bc1a884.js",
     "static/js/453.5e665867.chunk.js": "/social-app-react-app-inbox/static/js/453.5e665867.chunk.js",
     "index.html": "/social-app-react-app-inbox/index.html",
     "main.04c9f8fe.css.map": "/social-app-react-app-inbox/static/css/main.04c9f8fe.css.map",
-    "main.8cf7ab81.js.map": "/social-app-react-app-inbox/static/js/main.8cf7ab81.js.map",
+    "main.4bc1a884.js.map": "/social-app-react-app-inbox/static/js/main.4bc1a884.js.map",
     "453.5e665867.chunk.js.map": "/social-app-react-app-inbox/static/js/453.5e665867.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04c9f8fe.css",
-    "static/js/main.8cf7ab81.js"
+    "static/js/main.4bc1a884.js"
   ]
 }
