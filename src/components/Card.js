@@ -1,17 +1,47 @@
-import React, { useState } from 'react';
-import '../styles/card.css';
+import React, { useState, useEffect } from 'react';
+import { FaHeart } from 'react-icons/fa'; 
 import suprsend from "@suprsend/web-sdk";
+import '../styles/card.css';
 
 suprsend.init(process.env.REACT_APP_SUPRSEND_WORKSPACE_KEY, process.env.REACT_APP_SUPRSEND_WORKSPACE_SECRET);
 
 function Card({ userName, followers, todayFollowers, icon, name, postText, imageUrl }) {
     const cardClass = `card ${name}`;
     const [liked, setLiked] = useState(false);
+    const [comment, setComment] = useState('');
+    const [commentSubmitted, setCommentSubmitted] = useState(false); // Track if comment is submitted
     const [imageLoaded, setImageLoaded] = useState(false);
 
+    useEffect(() => {
+        let timer;
+        if (commentSubmitted) {
+            timer = setTimeout(() => {
+                setCommentSubmitted(false);
+            }, 4000); // 5000 milliseconds = 5 seconds
+        }
+        return () => clearTimeout(timer);
+    }, [commentSubmitted]);
+
     const handleLikeClick = () => {
-        suprsend.track("SHIPMENTV1", {"name": "John", "locations":"Avenue Street"});
-        setLiked(true); // Update the state to indicate that the button has been clicked
+        suprsend.track("Like_Event", {"username": "John", "locations": "Avenue Street"});
+        setLiked(!liked); // Toggle the liked state
+    };
+    
+
+    const handleCommentClick = () => {
+        if (comment.trim() === '') {
+            alert('Please type in some comment before hitting Comment');
+            return; // Stop further execution if comment is empty
+        }
+    
+        suprsend.track("Comment_Event", {"username": userName, "comment_content": comment});
+        setCommentSubmitted(true); // Set comment submitted
+        setComment(''); // Clear the comment input
+    };
+    
+
+    const handleCommentChange = (event) => {
+        setComment(event.target.value);
     };
 
     return (
@@ -24,22 +54,27 @@ function Card({ userName, followers, todayFollowers, icon, name, postText, image
                 <p className="post-text">{postText}</p>
                 {imageUrl && <img
                     src={imageUrl}
-                    alt="Post Image"
+                    alt="Post"
                     className={`post-image ${imageLoaded ? 'loaded' : ''}`}
                     onLoad={() => setImageLoaded(true)}
                 />}
             </div>
             <div className="card-actions">
                 <button className={`like-button ${liked ? 'liked' : ''}`} onClick={handleLikeClick}>
-                    {liked ? 'Liked' : 'Like'}
+                    <FaHeart className="heart-icon" />
                 </button>
-                <button className="comment-button">
+                <button className="comment-button" onClick={handleCommentClick}>
                     Comment
                 </button>
             </div>
             <div className="card-footer">
                 <span className="followers">{followers} Followers</span>
                 <span className="today">{todayFollowers} today</span>
+            </div>
+            {commentSubmitted && <p className="comment-submitted">Commented!</p>} {/* Display comment submitted message */}
+            <div className="comment-input">
+                <input type="text" value={comment} onChange={handleCommentChange} placeholder="Write a comment..." />
+                <button onClick={handleCommentClick}><i className="fa fa-paper-plane"></i></button>
             </div>
         </article>
     );

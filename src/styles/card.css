@@ -1,16 +1,19 @@
+/* card.css */
+
+/* Card Container */
 .card {
   border-radius: 8px;
   overflow: hidden;
   background: var(--cardGray);
-  text-align: left; /* Align text content to the left */
+  text-align: left;
   padding: 1.7em;
   position: relative;
-  margin-bottom: 20px; /* Increase the bottom margin for spacing between cards */
+  margin-bottom: 20px;
   transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Move the card up slightly on hover */
+  transform: translateY(-5px);
 }
 
 .card:before {
@@ -23,7 +26,7 @@
   top: 0;
 }
 
-/* Define background colors for different card types */
+/* Social Media Brand Colors */
 .card.facebook:before {
   background: var(--facebook);
 }
@@ -37,6 +40,7 @@
   background: var(--youTube);
 }
 
+/* Card Title */
 .card-title {
   color: var(--cardTitle);
   font-size: 0.8em;
@@ -49,8 +53,9 @@
   margin-right: 5px;
 }
 
+/* Followers */
 .card-followers-number {
-  font-size: 28px; /* Decrease font size for better fit */
+  font-size: 28px;
   font-weight: 700;
 }
 
@@ -58,21 +63,23 @@
   display: block;
   text-transform: uppercase;
   color: var(--cardTitle);
-  letter-spacing: 2px; /* Reduce letter spacing for better readability */
+  letter-spacing: 2px;
   font-size: 0.7em;
 }
 
+/* Today's Stats */
 .card-today {
-  margin-top: 10px; /* Decrease top margin for better spacing */
+  margin-top: 10px;
   color: var(--lime-green);
   font-size: 0.7em;
   font-weight: bold;
 }
 
+/* Card Header */
 .card-header {
   display: flex;
   align-items: center;
-  margin-bottom: 12px; /* Increase bottom margin for spacing */
+  margin-bottom: 12px;
 }
 
 .user-icon {
@@ -86,18 +93,20 @@
   font-weight: bold;
 }
 
+/* Content Text */
 .card-content {
-  margin-bottom: 20px; /* Increase bottom margin for spacing */
+  margin-bottom: 20px;
 }
 
 .post-text {
   font-size: 14px;
 }
 
+/* Card Actions */
 .card-actions {
   display: flex;
-  gap: 12px; /* Increase gap for better separation */
-  margin-bottom: 20px; /* Increase bottom margin for spacing */
+  gap: 12px;
+  margin-bottom: 20px;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -106,6 +115,7 @@
   color: #ffffff;
 }
 
+/* Like Button */
 .like-button,
 .comment-button {
   background-color: blue;
@@ -121,16 +131,14 @@
   color: blue;
 }
 
+/* Footer */
 .card-footer {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
 }
 
-/* card.css */
-
-/* Your existing styles */
-
+/* Like Button Styles */
 .like-button {
   background-color: #ffffff;
   color: #333333;
@@ -146,22 +154,60 @@
 }
 
 .like-button.liked {
-  background-color: #4caf50; /* Green */
+  background-color: #d94f66; /* Green background when liked */
   color: #ffffff;
 }
 
 .like-button.liked:hover {
-  background-color: #388e3c; /* Darker green */
+  background-color: #e82946; /* Darker green on hover when liked */
 }
 
+/* Post Image */
 .post-image {
-  width: 100%; /* Adjust percentage as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px auto; /* Add margin to center the image and provide spacing */
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
   opacity: 0;
   transition: opacity 2.3s;
+  border-radius: 10px;
 }
 
 .post-image.loaded {
   opacity: 1;
-}  
+}
+
+/* Comment Input */
+.comment-input {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.comment-input input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Increased border radius for a smoother look */
+  margin-right: 10px;
+  outline: none; /* Remove default focus outline */
+}
+
+.comment-input button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-input button:hover {
+  color: blue;
+}
+
+.comment-input button i {
+  font-size: 1.5em;
+}
+
+/* Submitted Comment Message */
+.comment-submitted {
+  color: green;
+  margin-top: 5px;
+}
