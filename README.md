@@ -42,6 +42,9 @@ You can check how to use a React inapp notification center with dynamic theme fu
    npm install
    ```
 
+## Adding .env key
+Head to the `.env.sample` file, where you must fill in the required keys. Then rename the `.env.sample` file to the `.env` file and save it. 
+
 ## Usage
 
 1. Start the development server:
