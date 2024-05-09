@@ -23,9 +23,12 @@ function Card({ userName, followers, todayFollowers, icon, name, postText, image
     }, [commentSubmitted]);
 
     const handleLikeClick = () => {
-        suprsend.track("Like_Event", {"username": "John", "locations": "Avenue Street"});
+        if (!liked) {
+            suprsend.track("Like_Event", {"username": "John", "locations": "Avenue Street", "batch_key": userName});
+        }
         setLiked(!liked); // Toggle the liked state
     };
+    
     
 
     const handleCommentClick = () => {

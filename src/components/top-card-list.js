@@ -6,7 +6,7 @@ import {generate as id} from 'shortid'
 
 const cardListData = [
     {
-        userName: '@pepito',
+        userName: '@facebook',
         followers: '1486',
         todayFollowers: 12,
         icon: "https://agusdelva.github.io/social-media-dashboard/images/facebook.png",
@@ -17,7 +17,7 @@ const cardListData = [
         imageHeight: "280px" // Add height of the image
     },
     {
-        userName: '@luisa',
+        userName: '@twitter',
         followers: '28540',
         todayFollowers: 20,
         icon: "https://agusdelva.github.io/social-media-dashboard/images/twitter.png",
@@ -28,7 +28,7 @@ const cardListData = [
         imageHeight: "280px" 
     },
     {
-        userName: '@osvaldo',
+        userName: '@instagram',
         followers: '4550',
         todayFollowers: 30,
         icon: "https://agusdelva.github.io/social-media-dashboard/images/instagram24.png",
@@ -39,7 +39,7 @@ const cardListData = [
         imageHeight: "280px"
     },
     {
-        userName: '@jose',
+        userName: '@youtube',
         followers: '4140',
         todayFollowers: -50,
         icon: "https://agusdelva.github.io/social-media-dashboard/images/youtube.png",
