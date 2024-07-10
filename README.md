@@ -69,7 +69,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-- GitHub: [YourGitHubUsername](https://github.com/suprsend-notificationapi)
+- GitHub: [Nik L](https://github.com/suprsend-notificationapi)
 - Email: nklkumar0321@gmail.com
 
 
