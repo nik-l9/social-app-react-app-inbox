@@ -12,7 +12,7 @@ const cardListData = [
         icon: "https://agusdelva.github.io/social-media-dashboard/images/facebook.png",
         name: 'facebook',
         postText: "Hi ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lorem vel odio eleifend, vel interdum neque posuere.",
-        imageUrl: "https://th.bing.com/th/id/OIG2.keZgby_Y2TmRLWlj16tT?pid=ImgGn",
+        imageUrl: "https://images.pexels.com/photos/16168538/pexels-photo-16168538/free-photo-of-black-dog-in-street.jpeg",
         imageWidth: "280px", // Add width of the image
         imageHeight: "280px" // Add height of the image
     },
@@ -23,7 +23,7 @@ const cardListData = [
         icon: "https://agusdelva.github.io/social-media-dashboard/images/twitter.png",
         name: 'twitter',
         postText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        imageUrl: "https://th.bing.com/th/id/OIG2.R3tP6FSpVk7vhKSqyQam?w=173&h=173&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+        imageUrl: "https://images.pexels.com/photos/24235391/pexels-photo-24235391/free-photo-of-black-and-white-photo-of-a-bridge.jpeg",
         imageWidth: "280px", // Add width of the image
         imageHeight: "280px" 
     },
@@ -34,7 +34,7 @@ const cardListData = [
         icon: "https://agusdelva.github.io/social-media-dashboard/images/instagram24.png",
         name: 'instagram',
         postText: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        imageUrl: "https://th.bing.com/th/id/OIG1.GgJF8Yhn2qeDykUDFxhC?w=173&h=173&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+        imageUrl: "https://images.pexels.com/photos/11631545/pexels-photo-11631545.jpeg",
         imageWidth: "280px", // Add width of the image
         imageHeight: "280px"
     },
@@ -45,7 +45,7 @@ const cardListData = [
         icon: "https://agusdelva.github.io/social-media-dashboard/images/youtube.png",
         name: 'youtube',
         postText: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        imageUrl: "https://th.bing.com/th/id/OIG4.0eDfhwN2WFxiny6Kw.jY?w=173&h=173&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+        imageUrl: "https://images.pexels.com/photos/7239501/pexels-photo-7239501.jpeg",
         imageWidth: "280px", // Add width of the image
         imageHeight: "280px"
     },
