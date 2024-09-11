@@ -1,4 +1,5 @@
 # React Inapp Inbox for Social Media Tools
+If you try to run it directly from the URL, it won't run because your distinct ID hasn't been set up on the application yet. You can clone, then set your distinct ID on platform to see it working. 
 
 [Project Demo](https://suprsend-notificationapi.github.io/social-app-react-app-inbox/)
 
